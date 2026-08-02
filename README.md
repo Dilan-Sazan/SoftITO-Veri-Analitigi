@@ -6,11 +6,16 @@ Bu repo, SoftİTO Veri Analistliği eğitimi kapsamında yapılan ders çalışm
 
 Her çalışma kendi klasöründe, kendi README dosyasıyla birlikte yer alır.
 
-*(Çalışmalar eklendikçe bu liste güncellenecektir.)*
+| Klasör | Tür | Konu |
+|---|---|---|
+| [`01-NumPy-Temelleri-Ders`](01-NumPy-Temelleri-Ders) | 📘 Ders | NumPy temel kavramları (satır satır açıklamalı) |
+| [`02-NumPy-Pratik-Ogrenci-Performans`](02-NumPy-Pratik-Ogrenci-Performans) | 🎯 Pratik | NumPy konularının 5.000 kişilik öğrenci performans veri setine uygulanması |
+
+*(Yeni çalışmalar eklendikçe bu liste güncellenecektir.)*
 
 ## 🛠️ Kullanılan Araçlar
 
-- Python (pandas, numpy, matplotlib, seaborn)
+- Python (NumPy)
 - Jupyter Notebook
 
 ---
