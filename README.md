@@ -18,6 +18,8 @@ Her çalışma kendi klasöründe, kendi README dosyasıyla birlikte yer alır.
 | [`08-Coklu-Regresyon-Pratik-Mutluluk`](08-Coklu-Regresyon-Pratik-Mutluluk) | 🎯 Pratik | Mutluluk skorunu 5 faktörle tahmin: basit vs çoklu model karşılaştırması (R² 0.62 → 0.72) |
 | [`09-Polinom-Regresyon-Ders`](09-Polinom-Regresyon-Ders) | 📘 Ders | Polinom regresyon — bias-variance, PolynomialFeatures, K-Fold CV ile derece seçimi |
 | [`10-Polinom-Regresyon-Pratik-Ogrenci`](10-Polinom-Regresyon-Pratik-Ogrenci) | 🎯 Pratik | Çalışma saati → not ilişkisindeki ters-U'nun polinomla yakalanması (R² 0.64 → 0.83) |
+| [`11-Lojistik-Regresyon-Ders`](11-Lojistik-Regresyon-Ders) | 📘 Ders | Lojistik regresyon — sigmoid, karar sınırı, cross-entropy, karmaşıklık matrisi |
+| [`12-Lojistik-Regresyon-Pratik-Diyabet`](12-Lojistik-Regresyon-Pratik-Diyabet) | 🎯 Pratik | 253 bin kişilik diyabet verisiyle risk tahmini: doğruluk yanılsaması ve class_weight karşılaştırması |
 
 *(Yeni çalışmalar eklendikçe bu liste güncellenecektir.)*
 
