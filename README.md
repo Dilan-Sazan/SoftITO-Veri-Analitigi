@@ -20,6 +20,8 @@ Her çalışma kendi klasöründe, kendi README dosyasıyla birlikte yer alır.
 | [`10-Polinom-Regresyon-Pratik-Ogrenci`](10-Polinom-Regresyon-Pratik-Ogrenci) | 🎯 Pratik | Çalışma saati → not ilişkisindeki ters-U'nun polinomla yakalanması (R² 0.64 → 0.83) |
 | [`11-Lojistik-Regresyon-Ders`](11-Lojistik-Regresyon-Ders) | 📘 Ders | Lojistik regresyon — sigmoid, karar sınırı, cross-entropy, karmaşıklık matrisi |
 | [`12-Lojistik-Regresyon-Pratik-Diyabet`](12-Lojistik-Regresyon-Pratik-Diyabet) | 🎯 Pratik | 253 bin kişilik diyabet verisiyle risk tahmini: doğruluk yanılsaması ve class_weight karşılaştırması |
+| [`13-SVM-Ders`](13-SVM-Ders) | 📘 Ders | Support Vector Machine — margin, kernel hilesi, C/gamma, GridSearchCV |
+| [`14-SVM-Pratik-AI-Isleri`](14-SVM-Pratik-AI-Isleri) | 🎯 Pratik | 90 bin AI ilanında tecrübe seviyesi tahmini: sızıntı tespiti, kernel yarışı, %86 doğruluk |
 
 *(Yeni çalışmalar eklendikçe bu liste güncellenecektir.)*
 
