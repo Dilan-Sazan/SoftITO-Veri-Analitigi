@@ -16,6 +16,8 @@ Her çalışma kendi klasöründe, kendi README dosyasıyla birlikte yer alır.
 | [`06-Regresyon-Pratik-Ispark`](06-Regresyon-Pratik-Ispark) | 🎯 Pratik | Aynı yöntemlerle iki yeni hipotez: 7/24 açıklık etkisi + ilçe bazlı sürekli regresyon |
 | [`07-Coklu-Regresyon-Ders`](07-Coklu-Regresyon-Ders) | 📘 Ders | sklearn ile basit ve çoklu regresyon — Süper Lig verisiyle (train/test, metrikler, özellik seçimi) |
 | [`08-Coklu-Regresyon-Pratik-Mutluluk`](08-Coklu-Regresyon-Pratik-Mutluluk) | 🎯 Pratik | Mutluluk skorunu 5 faktörle tahmin: basit vs çoklu model karşılaştırması (R² 0.62 → 0.72) |
+| [`09-Polinom-Regresyon-Ders`](09-Polinom-Regresyon-Ders) | 📘 Ders | Polinom regresyon — bias-variance, PolynomialFeatures, K-Fold CV ile derece seçimi |
+| [`10-Polinom-Regresyon-Pratik-Ogrenci`](10-Polinom-Regresyon-Pratik-Ogrenci) | 🎯 Pratik | Çalışma saati → not ilişkisindeki ters-U'nun polinomla yakalanması (R² 0.64 → 0.83) |
 
 *(Yeni çalışmalar eklendikçe bu liste güncellenecektir.)*
 
