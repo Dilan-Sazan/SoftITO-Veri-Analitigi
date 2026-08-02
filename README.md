@@ -14,12 +14,14 @@ Her çalışma kendi klasöründe, kendi README dosyasıyla birlikte yer alır.
 | [`04-Pandas-Pratik-Dunya-Mutluluk`](04-Pandas-Pratik-Dunya-Mutluluk) | 🎯 Pratik | Dünya Mutluluk Raporu (2015–2019) ile pandas ve veri temizleme uygulaması |
 | [`05-Regresyon-Ders`](05-Regresyon-Ders) | 📘 Ders | Basit doğrusal regresyon — İSPARK verisiyle sıfırdan (en küçük kareler, dummy değişken, R², p-değeri) |
 | [`06-Regresyon-Pratik-Ispark`](06-Regresyon-Pratik-Ispark) | 🎯 Pratik | Aynı yöntemlerle iki yeni hipotez: 7/24 açıklık etkisi + ilçe bazlı sürekli regresyon |
+| [`07-Coklu-Regresyon-Ders`](07-Coklu-Regresyon-Ders) | 📘 Ders | sklearn ile basit ve çoklu regresyon — Süper Lig verisiyle (train/test, metrikler, özellik seçimi) |
+| [`08-Coklu-Regresyon-Pratik-Mutluluk`](08-Coklu-Regresyon-Pratik-Mutluluk) | 🎯 Pratik | Mutluluk skorunu 5 faktörle tahmin: basit vs çoklu model karşılaştırması (R² 0.62 → 0.72) |
 
 *(Yeni çalışmalar eklendikçe bu liste güncellenecektir.)*
 
 ## 🛠️ Kullanılan Araçlar
 
-- Python (NumPy, pandas, matplotlib, scipy)
+- Python (NumPy, pandas, matplotlib, seaborn, scipy, scikit-learn)
 - Jupyter Notebook
 
 ---
