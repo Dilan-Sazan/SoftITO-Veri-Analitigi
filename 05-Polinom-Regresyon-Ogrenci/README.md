@@ -49,8 +49,3 @@ Bu veri seti bilinçli olarak "kirli" — ve her sorun için verilen karar noteb
 - **Derece 3 kazandı:** ters-U simetrik olmadığı için (yavaş yükseliş, dik düşüş) kübik terim işe yaradı; derece 4-5 aynı performansı fazladan karmaşıklıkla verdi → eşit başarıda en basit model ilkesi
 - **Pearson korelasyonu yanılttı:** Study_Hours-Test_Score korelasyonu 0.66 "orta" görünüyordu; ilişki aslında çok güçlü ama doğrusal olmadığı için korelasyon düşük gösterdi — korelasyon yalnızca *doğrusal* ilişkiyi ölçer!
 - **Polinomun sınırı canlı görüldü:** eğrinin tepe noktasındaki tahmin 100'ü aştı (116!) — veri seyrekleşen uçlarda polinomların taşkın davranışının birebir örneği; dersteki "dezavantajlar" uyarısı kendi modelimde karşıma çıktı ve tahmin fonksiyonuna `np.clip` güvenlik sınırı eklendi
-
-## 🔗 İlgili Ders
-
-Bu pratiğin dayandığı ders notebook'u için:
-👉 [`09-Polinom-Regresyon-Ders`](../09-Polinom-Regresyon-Ders) klasörüne bakabilirsiniz.

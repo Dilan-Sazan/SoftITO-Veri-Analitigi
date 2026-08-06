@@ -14,7 +14,7 @@ Bu klasör, **SVM** dersindeki iş akışının kendi veri setime uygulandığı
 ## ⭐ Bu Pratiğin İki Kritik Anı
 
 ### 1. Veri Sızıntısı Yakalandı
-Veri setinde `experience_years` sütunu, hedef olan `experience_level`'ı **birebir belirliyordu** (Entry: 0-1 yıl, Mid: 2-5, Senior: 6-11, Lead: 12-19 — aralıklar hiç örtüşmüyor). Bu sütun modele girseydi model %100 başarı gösterir ama hiçbir şey öğrenmemiş olurdu. Groupby tablosuyla tespit edilip **dışlandı** — 08. pratikteki `Sira` dersinin devamı niteliğinde.
+Veri setinde `experience_years` sütunu, hedef olan `experience_level`'ı **birebir belirliyordu** (Entry: 0-1 yıl, Mid: 2-5, Senior: 6-11, Lead: 12-19 — aralıklar hiç örtüşmüyor). Bu sütun modele girseydi model %100 başarı gösterir ama hiçbir şey öğrenmemiş olurdu. Groupby tablosuyla tespit edilip **dışlandı** — 04. pratikteki `Sira` dersinin devamı niteliğinde.
 
 ### 2. SVM'in Ölçek Sınırı Yaşandı
 SVM'in eğitim süresi örnek sayısıyla karesel-kübik büyüdüğü için 90.000 satır + GridSearchCV pratik değil. Çözüm: sınıf oranlarını koruyan **katmanlı örneklem** (`groupby().sample()`, 8.000 satır). Gerçek projede alternatiflerin (LinearSVC, SGDClassifier) ne zaman devreye gireceği de notebook'ta tartışıldı.
@@ -41,7 +41,3 @@ Sızıntı analizi (groupby ile) • katmanlı örneklem • `get_dummies` ile o
 ## 🎯 Sonraki Adım Fikirleri
 
 LinearSVC ile 90 bin satırın tamamını kullanmak; RandomForest ile karşılaştırıp özellik önemlerini görmek.
-
-## 🔗 İlgili Ders
-
-👉 [`13-SVM-Ders`](../13-SVM-Ders) klasörüne bakabilirsiniz.

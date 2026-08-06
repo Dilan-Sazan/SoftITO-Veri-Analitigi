@@ -50,7 +50,3 @@ Stratified train/test • StandardScaler (doğru fit/transform ayrımıyla) • 
 Karar eşiğiyle (0.5) oynayıp precision-recall eğrisi çıkarmak, ROC-AUC ile eşikten bağımsız karşılaştırma.
 
 > ⚠️ Bu bir eğitim çalışmasıdır; gerçek tıbbi değerlendirme yalnızca sağlık profesyonellerince yapılır.
-
-## 🔗 İlgili Ders
-
-👉 [`11-Lojistik-Regresyon-Ders`](../11-Lojistik-Regresyon-Ders) klasörüne bakabilirsiniz.

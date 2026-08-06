@@ -32,8 +32,3 @@ Veri seti 5.000 öğrenciye ait 16 sütun içerir:
 - Günde **4+ saat çalışan** öğrencilerin başarı ortalaması, 2 saatten az çalışanlardan belirgin şekilde yüksek
 - **Kalan öğrencilerin** devam yüzdesi, geçen öğrencilere göre daha düşük
 - `argmax` ile en yüksek final yüzdesine sahip öğrenci tespit edildi
-
-## 🔗 İlgili Ders
-
-Bu pratiğin dayandığı ders notebook'u için:
-👉 [`01-NumPy-Temelleri-Ders`](../01-NumPy-Temelleri-Ders) klasörüne bakabilirsiniz.

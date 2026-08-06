@@ -1,34 +1,36 @@
-# SoftİTO Veri Analistliği Eğitimi 📊
+# SoftİTO Veri Analistliği — Pratik Çalışmalarım 📊
 
-Bu repo, SoftİTO Veri Analistliği eğitimi kapsamında yapılan ders çalışmalarını ve kişisel pratik çalışmalarını içerir.
+Bu repo, SoftİTO Veri Analistliği eğitimi boyunca öğrendiğim konuları **kendi seçtiğim veri setleri üzerinde uyguladığım pratik çalışmaları** içerir. Her çalışma kendi klasöründe; kendi README dosyası, notebook'u ve veri setiyle birlikte durur.
 
-## 📁 İçerik
+Notebook'ların tamamı çalıştırılmış haldedir — GitHub'da açtığınızda tüm çıktıları ve grafikleri doğrudan görebilirsiniz.
 
-Her çalışma kendi klasöründe, kendi README dosyasıyla birlikte yer alır.
+## 📁 Çalışmalar
 
-| Klasör | Tür | Konu |
+| Klasör | Konu | Veri Seti |
 |---|---|---|
-| [`01-NumPy-Temelleri-Ders`](01-NumPy-Temelleri-Ders) | 📘 Ders | NumPy temel kavramları (satır satır açıklamalı) |
-| [`02-NumPy-Pratik-Ogrenci-Performans`](02-NumPy-Pratik-Ogrenci-Performans) | 🎯 Pratik | NumPy konularının 5.000 kişilik öğrenci performans veri setine uygulanması |
-| [`03-Pandas-Ders`](03-Pandas-Ders) | 📘 Ders | Pandas temelleri ve veri temizleme (2 notebook) |
-| [`04-Pandas-Pratik-Dunya-Mutluluk`](04-Pandas-Pratik-Dunya-Mutluluk) | 🎯 Pratik | Dünya Mutluluk Raporu (2015–2019) ile pandas ve veri temizleme uygulaması |
-| [`05-Regresyon-Ders`](05-Regresyon-Ders) | 📘 Ders | Basit doğrusal regresyon — İSPARK verisiyle sıfırdan (en küçük kareler, dummy değişken, R², p-değeri) |
-| [`06-Regresyon-Pratik-Ispark`](06-Regresyon-Pratik-Ispark) | 🎯 Pratik | Aynı yöntemlerle iki yeni hipotez: 7/24 açıklık etkisi + ilçe bazlı sürekli regresyon |
-| [`07-Coklu-Regresyon-Ders`](07-Coklu-Regresyon-Ders) | 📘 Ders | sklearn ile basit ve çoklu regresyon — Süper Lig verisiyle (train/test, metrikler, özellik seçimi) |
-| [`08-Coklu-Regresyon-Pratik-Mutluluk`](08-Coklu-Regresyon-Pratik-Mutluluk) | 🎯 Pratik | Mutluluk skorunu 5 faktörle tahmin: basit vs çoklu model karşılaştırması (R² 0.62 → 0.72) |
-| [`09-Polinom-Regresyon-Ders`](09-Polinom-Regresyon-Ders) | 📘 Ders | Polinom regresyon — bias-variance, PolynomialFeatures, K-Fold CV ile derece seçimi |
-| [`10-Polinom-Regresyon-Pratik-Ogrenci`](10-Polinom-Regresyon-Pratik-Ogrenci) | 🎯 Pratik | Çalışma saati → not ilişkisindeki ters-U'nun polinomla yakalanması (R² 0.64 → 0.83) |
-| [`11-Lojistik-Regresyon-Ders`](11-Lojistik-Regresyon-Ders) | 📘 Ders | Lojistik regresyon — sigmoid, karar sınırı, cross-entropy, karmaşıklık matrisi |
-| [`12-Lojistik-Regresyon-Pratik-Diyabet`](12-Lojistik-Regresyon-Pratik-Diyabet) | 🎯 Pratik | 253 bin kişilik diyabet verisiyle risk tahmini: doğruluk yanılsaması ve class_weight karşılaştırması |
-| [`13-SVM-Ders`](13-SVM-Ders) | 📘 Ders | Support Vector Machine — margin, kernel hilesi, C/gamma, GridSearchCV |
-| [`14-SVM-Pratik-AI-Isleri`](14-SVM-Pratik-AI-Isleri) | 🎯 Pratik | 90 bin AI ilanında tecrübe seviyesi tahmini: sızıntı tespiti, kernel yarışı, %86 doğruluk |
+| [`01-NumPy-Ogrenci-Performans`](01-NumPy-Ogrenci-Performans) | NumPy: array işlemleri, boolean filtreleme, broadcasting, istatistikler | 5.000 öğrencilik performans verisi |
+| [`02-Pandas-Dunya-Mutluluk`](02-Pandas-Dunya-Mutluluk) | Pandas temelleri + veri temizleme (5 dağınık dosyanın birleştirilmesi) | Dünya Mutluluk Raporu 2015–2019 |
+| [`03-Regresyon-Ispark`](03-Regresyon-Ispark) | Basit doğrusal regresyon: en küçük kareler, dummy değişken, R² vs p-değeri | İSPARK otopark verisi (708 nokta) |
+| [`04-Coklu-Regresyon-Mutluluk`](04-Coklu-Regresyon-Mutluluk) | Çoklu regresyon: basit vs çoklu model karşılaştırması (R² 0.62 → 0.72) | Mutluluk verisi (02'nin temiz çıktısı) |
+| [`05-Polinom-Regresyon-Ogrenci`](05-Polinom-Regresyon-Ogrenci) | Polinom regresyon: ters-U ilişkisinin yakalanması, K-Fold ile derece seçimi | 1.020 öğrencilik performans verisi |
+| [`06-Lojistik-Regresyon-Diyabet`](06-Lojistik-Regresyon-Diyabet) | Sınıflandırma: doğruluk yanılsaması ve sınıf dengesizliğiyle mücadele | CDC BRFSS 2015 (253.680 kişi) |
+| [`07-SVM-AI-Isleri`](07-SVM-AI-Isleri) | SVM: kernel karşılaştırması, GridSearchCV, veri sızıntısı tespiti | 90.000 küresel AI iş ilanı |
 
-*(Yeni çalışmalar eklendikçe bu liste güncellenecektir.)*
+## 🔗 Çalışmalar Arası Bağlantı
+
+`02` klasöründe 5 ayrı yıllık dosyayı temizleyip tek veri setine dönüştürdüm; `04` klasöründeki çoklu regresyon modeli tam olarak bu temiz veriyi kullanıyor. Yani repo içinde gerçek bir analist iş akışı zinciri var: **temizle → keşfet → modelle**.
 
 ## 🛠️ Kullanılan Araçlar
 
-- Python (NumPy, pandas, matplotlib, seaborn, scipy, scikit-learn)
-- Jupyter Notebook
+Python • NumPy • pandas • matplotlib • seaborn • scipy • scikit-learn • Jupyter Notebook / Google Colab
+
+## 💡 Öne Çıkan Öğrenmeler
+
+- **Veri sızıntısı (data leakage):** hedeften türetilmiş sütunları modele koymamak (`Sira`, `experience_years`)
+- **Anlamlılık ≠ tahmin gücü:** p-değeri çok küçük olabilir ama R² düşük kalabilir
+- **Doğruluk yanılsaması:** dengesiz veride %85 accuracy'li model, riskli hastaların %81'ini kaçırabilir
+- **Her aykırı değer hata değildir:** IQR'ın işaretlediği uç değerler bazen tam da aradığımız sinyaldir
+- **Karmaşık olan her zaman kazanmaz:** linear kernel, RBF ve polinomu geçebilir
 
 ---
-*SoftİTO Veri Analistliği Eğitimi - 2026*
+*SoftİTO Veri Analistliği Eğitimi — 2026*

@@ -47,8 +47,3 @@ park adı, tipi (yol üstü / açık otopark / kapalı otopark / taksi / minibü
 - Fatih, hem park sayısında hem toplam kapasitede açık ara lider; regresyon doğrusunun bile üzerinde
 - Artık grafiğinde tahminler büyüdükçe saçılımın arttığı gözlendi (heteroskedastisite ön izlemesi) → basit regresyonun sınırları
 - **Sonraki hedef:** ilçe + park tipini birlikte modele katan çoklu doğrusal regresyon
-
-## 🔗 İlgili Ders
-
-Bu pratiğin dayandığı ders notebook'u için:
-👉 [`05-Regresyon-Ders`](../05-Regresyon-Ders) klasörüne bakabilirsiniz.

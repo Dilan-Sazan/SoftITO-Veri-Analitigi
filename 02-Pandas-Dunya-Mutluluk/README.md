@@ -43,8 +43,3 @@ Bu veri seti pratik için özellikle uygun çünkü **gerçekten "kirli"**:
 | Ülke ismi tutarlılığı | `value_counts()` ile tespit + `replace()` |
 | İndeks düzenleme | `sort_values()` + `reset_index()` |
 | Otomasyon | Uçtan uca temizleme fonksiyonu |
-
-## 🔗 İlgili Dersler
-
-Bu pratiklerin dayandığı ders notebook'ları için:
-👉 [`03-Pandas-Ders`](../03-Pandas-Ders) klasörüne bakabilirsiniz.

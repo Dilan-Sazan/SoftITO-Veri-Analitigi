@@ -2,7 +2,7 @@
 
 Bu klasör, **sklearn ile Basit ve Çoklu Regresyon** dersindeki iş akışının kendi veri setime uygulandığı kişisel pratik çalışmamı içerir. Derste Süper Lig verisiyle "atılan gol" tahmin edilmişti; burada aynı adımlarla ülkelerin **mutluluk skorunu** tahmin ediyorum.
 
-Bu pratiğin güzel yanı: kullandığım veri, [`04-Pandas-Pratik-Dunya-Mutluluk`](../04-Pandas-Pratik-Dunya-Mutluluk) klasöründeki **veri temizleme pratiğimin çıktısı**. Yani repo içinde gerçek bir analist iş akışı zinciri oluştu: *temizle → keşfet → modelle*. 🔗
+Bu pratiğin güzel yanı: kullandığım veri, [`02-Pandas-Dunya-Mutluluk`](../02-Pandas-Dunya-Mutluluk) klasöründeki **veri temizleme pratiğimin çıktısı**. Yani repo içinde gerçek bir analist iş akışı zinciri oluştu: *temizle → keşfet → modelle*. 🔗
 
 ## 📄 Dosyalar
 
@@ -45,8 +45,3 @@ Bu pratiğin güzel yanı: kullandığım veri, [`04-Pandas-Pratik-Dunya-Mutlulu
 ## 🎯 Sonraki Adım Fikirleri
 
 `StandardScaler` ile özellik ölçekleme, polinom özellikler, yıl bazlı çapraz doğrulama.
-
-## 🔗 İlgili Ders
-
-Bu pratiğin dayandığı ders notebook'u için:
-👉 [`07-Coklu-Regresyon-Ders`](../07-Coklu-Regresyon-Ders) klasörüne bakabilirsiniz.
