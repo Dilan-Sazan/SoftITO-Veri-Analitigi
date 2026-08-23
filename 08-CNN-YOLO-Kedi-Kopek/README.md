@@ -18,10 +18,9 @@ Bu klasör, **CNN ve YOLO** dersindeki iş akışının kendi veri setime uygula
 Bu notebook **Google Colab için** yazıldı ve GPU gerektirir — önceki pratiklerden farklı olarak çıktıları içine gömülü değil, çünkü derin öğrenme modellerinin eğitimi CPU'da saatler sürer.
 
 Çalıştırmak için:
-1. `kedi_kopek_veri.zip` dosyasını Google Drive'a yükle
+1. `kedi_kopek_veri.zip` dosyasını Colab'a yükle (sol paneldeki dosya simgesinden)
 2. Notebook'u Colab'da aç → **Çalışma zamanı → Çalışma zamanı türünü değiştir → GPU (T4)**
-3. İlk hücredeki `ZIP_YOLU` değişkenini kendi Drive klasörüne göre düzenle
-4. Hücreleri sırayla çalıştır
+3. Hücreleri sırayla çalıştır
 
 ## 🔄 Dersten Farkı
 
@@ -36,7 +35,7 @@ Bu notebook **Google Colab için** yazıldı ve GPU gerektirir — önceki prati
 
 ## 🛠️ Notebook'un Adımları
 
-**Bölüm 0-1 — Hazırlık:** Drive bağlama, zip açma, kütüphaneler, GPU kontrolü
+**Hazırlık:** Kütüphaneler, GPU kontrolü, zip açma
 
 **Bölüm 2 — Veri:** `image_dataset_from_directory` ile %80/%20 eğitim-doğrulama hattı, örnek görüntülerin gösterimi, sınıf dengesi kontrolü, `cache`/`prefetch` ile performans ayarı
 
@@ -50,7 +49,7 @@ Bu notebook **Google Colab için** yazıldı ve GPU gerektirir — önceki prati
 
 **Bölüm 6 — YOLO:** Ultralytics YOLOv8n ile kendi fotoğraflarımda nesne tespiti (kutu çizimi + güven skoru) ve 60 görüntülük başarı ölçümü
 
-**Bölüm 7 — Kaydetme:** Modeli `.keras` formatında Drive'a kaydetme
+**Bölüm 7 — Kaydetme:** Modeli `.keras` formatında kaydetme
 
 ## 💡 Beklenen Öğrenmeler
 

@@ -9,7 +9,6 @@ Bu klasör, **SVM** dersindeki iş akışının kendi veri setime uygulandığı
 | `svm_pratik.ipynb` | Uçtan uca pratik: sızıntı tespiti → örneklem → 3 kernel → GridSearch (tüm çıktılarla) |
 | `global_ai_jobs.csv` | Küresel AI iş ilanları (90.000 satır, 35 sütun: maaş, ülke, rol, şirket bilgileri...) |
 
-📱 **Colab/Drive uyumu:** Notebook'un başındaki hazır hücrede üç satırın yorumunu kaldırıp Drive klasör yolunu yazman yeterli.
 
 ## ⭐ Bu Pratiğin İki Kritik Anı
 

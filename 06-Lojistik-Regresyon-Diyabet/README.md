@@ -13,7 +13,6 @@ Bu klasör, **Lojistik Regresyon** dersindeki iş akışının kendi veri setime
 | `lojistik_regresyon_pratik.ipynb` | Uçtan uca pratik: keşif → ölçekleme → 2 model → metrik karşılaştırması (tüm çıktılarla) |
 | `diabetes_012_health_indicators_BRFSS2015.csv` | CDC BRFSS 2015 anketi (253.680 kişi, 22 sağlık göstergesi) |
 
-📱 **Colab/Drive uyumu:** Notebook'un başındaki hazır hücrede üç satırın yorumunu kaldırıp Drive klasör yolunu yazman yeterli.
 
 ## 🛠️ Verilen Kararlar (ve Gerekçeleri)
 

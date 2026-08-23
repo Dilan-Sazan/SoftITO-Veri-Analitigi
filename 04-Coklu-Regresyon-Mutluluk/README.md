@@ -11,7 +11,6 @@ Bu pratiğin güzel yanı: kullandığım veri, [`02-Pandas-Dunya-Mutluluk`](../
 | `mutluluk_coklu_regresyon_pratik.ipynb` | Basit + çoklu regresyonun uçtan uca uygulandığı pratik notebook (tüm çıktı ve grafiklerle) |
 | `mutluluk_2015_2019_temiz.csv` | Girdi verisi: 04. klasördeki temizleme pratiğinin çıktısı (782 satır, 2015–2019) |
 
-📱 **Colab/Drive uyumu:** Notebook'un başında hazır bir "veri yolu" hücresi var — Google Colab'da çalışıyorsan üç satırın yorumunu kaldırıp Drive klasörünü yazman yeterli.
 
 ## ❓ Araştırma Sorusu
 

@@ -15,7 +15,6 @@ Bu klasör, **Polinom Regresyon** dersindeki iş akışının kendi veri setime 
 | `polinom_regresyon_pratik.ipynb` | Uçtan uca pratik: ön işleme → EDA → derece seçimi → analiz (tüm çıktı ve grafiklerle) |
 | `student_performance.csv` | 1.020 öğrencilik ham veri (yaş, cinsiyet, çalışma saati, devam, sınav notu, harf notu) |
 
-📱 **Colab/Drive uyumu:** Notebook'un başındaki hazır hücrede üç satırın yorumunu kaldırıp Drive klasör yolunu yazman yeterli — veri doğrudan Drive'dan okunur.
 
 ## 🧹 Veri Ön İşleme Kararları
 
