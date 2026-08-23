@@ -16,6 +16,7 @@ Notebook'lar çalıştırılmış haldedir — GitHub'da açtığınızda çıkt
 | [`06-Lojistik-Regresyon-Diyabet`](06-Lojistik-Regresyon-Diyabet) | Sınıflandırma: doğruluk yanılsaması ve sınıf dengesizliğiyle mücadele | CDC BRFSS 2015 (253.680 kişi) |
 | [`07-SVM-AI-Isleri`](07-SVM-AI-Isleri) | SVM: kernel karşılaştırması, GridSearchCV, veri sızıntısı tespiti | 90.000 küresel AI iş ilanı |
 | [`08-CNN-YOLO-Kedi-Kopek`](08-CNN-YOLO-Kedi-Kopek) | Derin öğrenme: sıfırdan CNN vs transfer learning (MobileNetV2) — %52'ye karşı %89 | 1.000 kedi/köpek fotoğrafı |
+| [`09-Random-Forest-Elmas`](09-Random-Forest-Elmas) | Random Forest: aynı veriyle hem regresyon (R² 0.98) hem sınıflandırma (%79), özellik önemleri | 53.940 elmas |
 
 ## 🔗 Çalışmalar Arası Bağlantı
 
@@ -33,6 +34,7 @@ Python • NumPy • pandas • matplotlib • seaborn • scipy • scikit-lear
 - **Her aykırı değer hata değildir:** IQR'ın işaretlediği uç değerler bazen tam da aradığımız sinyaldir
 - **Karmaşık olan her zaman kazanmaz:** linear kernel, RBF ve polinomu geçebilir
 - **Az veri varsa transfer öğrenme:** sıfırdan CNN %52'de kalırken MobileNetV2 %89'a ulaştı
+- **Karıştırıcı değişken (confounding):** en iyi kesim elmaslar en ucuz çıktı — çünkü daha küçüklerdi
 
 ---
 *SoftİTO Veri Analistliği Eğitimi — 2026*
