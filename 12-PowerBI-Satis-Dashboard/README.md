@@ -1,6 +1,6 @@
 # Power BI: Satış Analizi Dashboard'u 📊
 
-Bu klasör, SoftİTO Veri Analistliği eğitiminin **Power BI** bölümünde hazırladığım satış analizi raporunu içerir. Önceki klasörlerdeki Python çalışmalarından farklı olarak burada iş zekâsı (BI) tarafı var: veri modelleme, DAX ölçüleri ve etkileşimli görselleştirme.
+Bu klasör, SoftİTO Veri Analitiği eğitiminin **Power BI** bölümünde hazırladığım satış analizi raporunu içerir. Önceki klasörlerdeki Python çalışmalarından farklı olarak burada iş zekâsı (BI) tarafı var: veri modelleme, DAX ölçüleri ve etkileşimli görselleştirme.
 
 ## 📄 Dosyalar
 

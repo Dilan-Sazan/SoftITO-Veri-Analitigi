@@ -1,6 +1,6 @@
 # Docker ile Konteynerize Edilmiş Öğrenci Analizi 🐳
 
-Bu klasör, SoftİTO Veri Analistliği eğitiminin **Docker** bölümünde yazdığım analiz projesini içerir. Amaç, Python analiz betiklerini konteyner içinde çalıştırmak — yani "benim bilgisayarımda çalışıyordu" probleminden kurtulmak.
+Bu klasör, SoftİTO Veri Analitiği eğitiminin **Docker** bölümünde yazdığım analiz projesini içerir. Amaç, Python analiz betiklerini konteyner içinde çalıştırmak — yani "benim bilgisayarımda çalışıyordu" probleminden kurtulmak.
 
 ## 🎯 Proje Ne Yapıyor?
 

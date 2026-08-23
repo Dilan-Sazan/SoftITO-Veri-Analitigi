@@ -1,6 +1,6 @@
 # SQL: E-Ticaret Veritabanı ve Sorgu Ödevi 🗄️
 
-Bu klasör, SoftİTO Veri Analistliği eğitiminin **SQL** bölümünde hazırladığım ödevi içerir: sıfırdan bir e-ticaret veritabanı tasarımı, örnek verilerle doldurulması ve **38 analiz sorusunun** sorgularla cevaplanması.
+Bu klasör, SoftİTO Veri Analitiği eğitiminin **SQL** bölümünde hazırladığım ödevi içerir: sıfırdan bir e-ticaret veritabanı tasarımı, örnek verilerle doldurulması ve **38 analiz sorusunun** sorgularla cevaplanması.
 
 ## 📄 Dosyalar
 

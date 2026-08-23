@@ -1,6 +1,6 @@
-# SoftİTO Veri Analistliği — Pratik Çalışmalarım 📊
+# SoftİTO Veri Analitiği — Pratik Çalışmalarım 📊
 
-Bu repo, SoftİTO Veri Analistliği eğitimi boyunca öğrendiğim konuları **kendi seçtiğim veri setleri üzerinde uyguladığım pratik çalışmaları** içerir. Her çalışma kendi klasöründe; kendi README dosyası, notebook'u ve veri setiyle birlikte durur.
+Bu repo, SoftİTO Veri Analitiği eğitimi boyunca öğrendiğim konuları **kendi seçtiğim veri setleri üzerinde uyguladığım pratik çalışmaları** içerir. Her çalışma kendi klasöründe; kendi README dosyası, notebook'u ve veri setiyle birlikte durur.
 
 Notebook'lar çalıştırılmış haldedir — GitHub'da açtığınızda çıktıları ve grafikleri doğrudan görebilirsiniz. (`08` klasöründeki derin öğrenme notebook'u Google Colab'da T4 GPU ile çalıştırılmıştır.)
 
@@ -44,4 +44,4 @@ Python • SQL (PostgreSQL) • Power BI (DAX) • Docker • NumPy • pandas �
 - **Özellik önemi modele göre değişir:** AdaBoost ve XGBoost aynı veride farklı değişkenleri öne çıkardı
 
 ---
-*SoftİTO Veri Analistliği Eğitimi — 2026*
+*SoftİTO Veri Analitiği Eğitimi — 2026*
