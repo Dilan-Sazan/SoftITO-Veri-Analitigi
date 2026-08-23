@@ -2,7 +2,7 @@
 
 Bu repo, SoftİTO Veri Analistliği eğitimi boyunca öğrendiğim konuları **kendi seçtiğim veri setleri üzerinde uyguladığım pratik çalışmaları** içerir. Her çalışma kendi klasöründe; kendi README dosyası, notebook'u ve veri setiyle birlikte durur.
 
-Notebook'ların tamamı çalıştırılmış haldedir — GitHub'da açtığınızda tüm çıktıları ve grafikleri doğrudan görebilirsiniz.
+Notebook'lar çalıştırılmış haldedir — GitHub'da açtığınızda çıktıları ve grafikleri doğrudan görebilirsiniz. (Tek istisna: `08` klasöründeki derin öğrenme notebook'u GPU gerektirdiği için Colab'da çalıştırılmak üzere hazırlanmıştır.)
 
 ## 📁 Çalışmalar
 
@@ -15,6 +15,7 @@ Notebook'ların tamamı çalıştırılmış haldedir — GitHub'da açtığın�
 | [`05-Polinom-Regresyon-Ogrenci`](05-Polinom-Regresyon-Ogrenci) | Polinom regresyon: ters-U ilişkisinin yakalanması, K-Fold ile derece seçimi | 1.020 öğrencilik performans verisi |
 | [`06-Lojistik-Regresyon-Diyabet`](06-Lojistik-Regresyon-Diyabet) | Sınıflandırma: doğruluk yanılsaması ve sınıf dengesizliğiyle mücadele | CDC BRFSS 2015 (253.680 kişi) |
 | [`07-SVM-AI-Isleri`](07-SVM-AI-Isleri) | SVM: kernel karşılaştırması, GridSearchCV, veri sızıntısı tespiti | 90.000 küresel AI iş ilanı |
+| [`08-CNN-YOLO-Kedi-Kopek`](08-CNN-YOLO-Kedi-Kopek) | Derin öğrenme: CNN, veri augmentasyonu, transfer learning (MobileNetV2), YOLO nesne tespiti | 1.000 kedi/köpek fotoğrafı |
 
 ## 🔗 Çalışmalar Arası Bağlantı
 
@@ -22,7 +23,7 @@ Notebook'ların tamamı çalıştırılmış haldedir — GitHub'da açtığın�
 
 ## 🛠️ Kullanılan Araçlar
 
-Python • NumPy • pandas • matplotlib • seaborn • scipy • scikit-learn • Jupyter Notebook / Google Colab
+Python • NumPy • pandas • matplotlib • seaborn • scipy • scikit-learn • TensorFlow/Keras • Ultralytics YOLO • Jupyter Notebook / Google Colab
 
 ## 💡 Öne Çıkan Öğrenmeler
 
