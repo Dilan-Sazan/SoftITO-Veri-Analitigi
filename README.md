@@ -18,6 +18,7 @@ Notebook'lar çalıştırılmış haldedir — GitHub'da açtığınızda çıkt
 | [`08-CNN-YOLO-Kedi-Kopek`](08-CNN-YOLO-Kedi-Kopek) | Derin öğrenme: sıfırdan CNN vs transfer learning (MobileNetV2) — %52'ye karşı %89 | 1.000 kedi/köpek fotoğrafı |
 | [`09-Random-Forest-Elmas`](09-Random-Forest-Elmas) | Random Forest: aynı veriyle hem regresyon (R² 0.98) hem sınıflandırma (%79), özellik önemleri | 53.940 elmas |
 | [`10-Isolation-Forest-Dolandiricilik`](10-Isolation-Forest-Dolandiricilik) | Denetimsiz anomali tespiti: etiketsiz dolandırıcılık yakalama (ROC-AUC 0.92), contamination etkisi | 60.000 kredi kartı işlemi |
+| [`11-AdaBoost-XGBoost-Gelir`](11-AdaBoost-XGBoost-Gelir) | Boosting karşılaştırması: XGBoost hem daha doğru (AUC 0.93 vs 0.91) hem 4.5 kat hızlı | 45.000 kişilik nüfus sayımı |
 
 ## 🔗 Çalışmalar Arası Bağlantı
 
@@ -25,7 +26,7 @@ Notebook'lar çalıştırılmış haldedir — GitHub'da açtığınızda çıkt
 
 ## 🛠️ Kullanılan Araçlar
 
-Python • NumPy • pandas • matplotlib • seaborn • scipy • scikit-learn • TensorFlow/Keras • Ultralytics YOLO • Jupyter Notebook / Google Colab
+Python • NumPy • pandas • matplotlib • seaborn • scipy • scikit-learn • XGBoost • TensorFlow/Keras • Ultralytics YOLO • Jupyter Notebook / Google Colab
 
 ## 💡 Öne Çıkan Öğrenmeler
 
@@ -37,6 +38,7 @@ Python • NumPy • pandas • matplotlib • seaborn • scipy • scikit-lear
 - **Az veri varsa transfer öğrenme:** sıfırdan CNN %52'de kalırken MobileNetV2 %89'a ulaştı
 - **Karıştırıcı değişken (confounding):** en iyi kesim elmaslar en ucuz çıktı — çünkü daha küçüklerdi
 - **Denetimsiz öğrenme de iş görür:** hiç etiket görmeden dolandırıcılık tespitinde ROC-AUC 0.92
+- **Özellik önemi modele göre değişir:** AdaBoost ve XGBoost aynı veride farklı değişkenleri öne çıkardı
 
 ---
 *SoftİTO Veri Analistliği Eğitimi — 2026*
