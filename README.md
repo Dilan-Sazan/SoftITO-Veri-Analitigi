@@ -17,6 +17,7 @@ Notebook'lar çalıştırılmış haldedir — GitHub'da açtığınızda çıkt
 | [`07-SVM-AI-Isleri`](07-SVM-AI-Isleri) | SVM: kernel karşılaştırması, GridSearchCV, veri sızıntısı tespiti | 90.000 küresel AI iş ilanı |
 | [`08-CNN-YOLO-Kedi-Kopek`](08-CNN-YOLO-Kedi-Kopek) | Derin öğrenme: sıfırdan CNN vs transfer learning (MobileNetV2) — %52'ye karşı %89 | 1.000 kedi/köpek fotoğrafı |
 | [`09-Random-Forest-Elmas`](09-Random-Forest-Elmas) | Random Forest: aynı veriyle hem regresyon (R² 0.98) hem sınıflandırma (%79), özellik önemleri | 53.940 elmas |
+| [`10-Isolation-Forest-Dolandiricilik`](10-Isolation-Forest-Dolandiricilik) | Denetimsiz anomali tespiti: etiketsiz dolandırıcılık yakalama (ROC-AUC 0.92), contamination etkisi | 60.000 kredi kartı işlemi |
 
 ## 🔗 Çalışmalar Arası Bağlantı
 
@@ -35,6 +36,7 @@ Python • NumPy • pandas • matplotlib • seaborn • scipy • scikit-lear
 - **Karmaşık olan her zaman kazanmaz:** linear kernel, RBF ve polinomu geçebilir
 - **Az veri varsa transfer öğrenme:** sıfırdan CNN %52'de kalırken MobileNetV2 %89'a ulaştı
 - **Karıştırıcı değişken (confounding):** en iyi kesim elmaslar en ucuz çıktı — çünkü daha küçüklerdi
+- **Denetimsiz öğrenme de iş görür:** hiç etiket görmeden dolandırıcılık tespitinde ROC-AUC 0.92
 
 ---
 *SoftİTO Veri Analistliği Eğitimi — 2026*
