@@ -10,13 +10,12 @@ Bu klasör, **CNN ve YOLO** dersindeki iş akışının kendi veri setime uygula
 
 | Dosya | Açıklama |
 |---|---|
-| `cnn_kedi_kopek_colab.ipynb` | ⭐ **Colab'da çalıştırılmış hali** — tüm çıktılar ve grafikler içinde |
-| `cnn_kedi_kopek_pratik.ipynb` | Aynı problemin alternatif kurgusu (tf.data hattı + YOLO bölümü), çalıştırılmadı |
+| `cnn_kedi_kopek_colab.ipynb` | Colab'da (T4 GPU) çalıştırılmış pratik — tüm çıktılar ve grafikler içinde |
 | `kedi_kopek_veri.zip` | Veri seti: `cats_set/` (500 jpg) + `dogs_set/` (500 jpg), değişken boyutlu RGB fotoğraflar |
 
 ## ⚠️ Çalıştırma Notu
 
-Derin öğrenme GPU gerektirir. `cnn_kedi_kopek_colab.ipynb` Google Colab'da T4 GPU ile çalıştırıldı; çıktılar ve grafikler notebook'un içinde.
+Derin öğrenme GPU gerektirir. Bu notebook Google Colab'da T4 GPU ile çalıştırıldı; çıktılar ve grafikler içinde.
 
 Yeniden çalıştırmak için: `kedi_kopek_veri.zip` dosyasını Colab'a yükle (sol paneldeki dosya simgesinden) → **Çalışma zamanı → Türü değiştir → GPU (T4)** → hücreleri sırayla çalıştır.
 
