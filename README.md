@@ -2,7 +2,7 @@
 
 Bu repo, SoftİTO Veri Analistliği eğitimi boyunca öğrendiğim konuları **kendi seçtiğim veri setleri üzerinde uyguladığım pratik çalışmaları** içerir. Her çalışma kendi klasöründe; kendi README dosyası, notebook'u ve veri setiyle birlikte durur.
 
-Notebook'lar çalıştırılmış haldedir — GitHub'da açtığınızda çıktıları ve grafikleri doğrudan görebilirsiniz. (Tek istisna: `08` klasöründeki derin öğrenme notebook'u GPU gerektirdiği için Colab'da çalıştırılmak üzere hazırlanmıştır.)
+Notebook'lar çalıştırılmış haldedir — GitHub'da açtığınızda çıktıları ve grafikleri doğrudan görebilirsiniz. (`08` klasöründeki derin öğrenme notebook'u Google Colab'da T4 GPU ile çalıştırılmıştır.)
 
 ## 📁 Çalışmalar
 
@@ -15,7 +15,7 @@ Notebook'lar çalıştırılmış haldedir — GitHub'da açtığınızda çıkt
 | [`05-Polinom-Regresyon-Ogrenci`](05-Polinom-Regresyon-Ogrenci) | Polinom regresyon: ters-U ilişkisinin yakalanması, K-Fold ile derece seçimi | 1.020 öğrencilik performans verisi |
 | [`06-Lojistik-Regresyon-Diyabet`](06-Lojistik-Regresyon-Diyabet) | Sınıflandırma: doğruluk yanılsaması ve sınıf dengesizliğiyle mücadele | CDC BRFSS 2015 (253.680 kişi) |
 | [`07-SVM-AI-Isleri`](07-SVM-AI-Isleri) | SVM: kernel karşılaştırması, GridSearchCV, veri sızıntısı tespiti | 90.000 küresel AI iş ilanı |
-| [`08-CNN-YOLO-Kedi-Kopek`](08-CNN-YOLO-Kedi-Kopek) | Derin öğrenme: CNN, veri augmentasyonu, transfer learning (MobileNetV2), YOLO nesne tespiti | 1.000 kedi/köpek fotoğrafı |
+| [`08-CNN-YOLO-Kedi-Kopek`](08-CNN-YOLO-Kedi-Kopek) | Derin öğrenme: sıfırdan CNN vs transfer learning (MobileNetV2) — %52'ye karşı %89 | 1.000 kedi/köpek fotoğrafı |
 
 ## 🔗 Çalışmalar Arası Bağlantı
 
@@ -32,6 +32,7 @@ Python • NumPy • pandas • matplotlib • seaborn • scipy • scikit-lear
 - **Doğruluk yanılsaması:** dengesiz veride %85 accuracy'li model, riskli hastaların %81'ini kaçırabilir
 - **Her aykırı değer hata değildir:** IQR'ın işaretlediği uç değerler bazen tam da aradığımız sinyaldir
 - **Karmaşık olan her zaman kazanmaz:** linear kernel, RBF ve polinomu geçebilir
+- **Az veri varsa transfer öğrenme:** sıfırdan CNN %52'de kalırken MobileNetV2 %89'a ulaştı
 
 ---
 *SoftİTO Veri Analistliği Eğitimi — 2026*

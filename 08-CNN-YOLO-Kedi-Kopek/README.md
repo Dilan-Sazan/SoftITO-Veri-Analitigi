@@ -10,17 +10,15 @@ Bu klasör, **CNN ve YOLO** dersindeki iş akışının kendi veri setime uygula
 
 | Dosya | Açıklama |
 |---|---|
-| `cnn_kedi_kopek_pratik.ipynb` | Uçtan uca pratik: veri hattı → augmentasyon → CNN → transfer learning → YOLO |
+| `cnn_kedi_kopek_colab.ipynb` | ⭐ **Colab'da çalıştırılmış hali** — tüm çıktılar ve grafikler içinde |
+| `cnn_kedi_kopek_pratik.ipynb` | Aynı problemin alternatif kurgusu (tf.data hattı + YOLO bölümü), çalıştırılmadı |
 | `kedi_kopek_veri.zip` | Veri seti: `cats_set/` (500 jpg) + `dogs_set/` (500 jpg), değişken boyutlu RGB fotoğraflar |
 
-## ⚠️ Çalıştırma Notu (Önemli)
+## ⚠️ Çalıştırma Notu
 
-Bu notebook **Google Colab için** yazıldı ve GPU gerektirir — önceki pratiklerden farklı olarak çıktıları içine gömülü değil, çünkü derin öğrenme modellerinin eğitimi CPU'da saatler sürer.
+Derin öğrenme GPU gerektirir. `cnn_kedi_kopek_colab.ipynb` Google Colab'da T4 GPU ile çalıştırıldı; çıktılar ve grafikler notebook'un içinde.
 
-Çalıştırmak için:
-1. `kedi_kopek_veri.zip` dosyasını Colab'a yükle (sol paneldeki dosya simgesinden)
-2. Notebook'u Colab'da aç → **Çalışma zamanı → Çalışma zamanı türünü değiştir → GPU (T4)**
-3. Hücreleri sırayla çalıştır
+Yeniden çalıştırmak için: `kedi_kopek_veri.zip` dosyasını Colab'a yükle (sol paneldeki dosya simgesinden) → **Çalışma zamanı → Türü değiştir → GPU (T4)** → hücreleri sırayla çalıştır.
 
 ## 🔄 Dersten Farkı
 
@@ -51,7 +49,28 @@ Bu notebook **Google Colab için** yazıldı ve GPU gerektirir — önceki prati
 
 **Bölüm 7 — Kaydetme:** Modeli `.keras` formatında kaydetme
 
-## 💡 Beklenen Öğrenmeler
+## 📌 Sonuçlar
+
+| Model | Test Doğruluğu | Eğitim Süresi |
+|---|---|---|
+| Sıfırdan CNN (augmentasyonsuz) | **%52** | 11 sn |
+| Sıfırdan CNN (augmentasyonlu) | **~%62** | 39 sn |
+| **Transfer Learning (MobileNetV2)** | **%89** | 15 epoch |
+
+### ⭐ Asıl Ders: Sıfırdan CNN Neden Çöktü?
+
+Augmentasyonsuz CNN'in eğitim doğruluğu %84'e çıkarken doğrulama doğruluğu %48'de kaldı — yani model **ezberledi (overfitting)**, öğrenmedi. Sınıflandırma raporu bunu çok net gösteriyor:
+
+- Kedi: recall %98 — neredeyse her şeye "kedi" diyor
+- Köpek: recall %6 — köpeklerin %94'ünü kaçırıyor
+
+Yani model gerçekte bir şey öğrenmemiş, çoğunluk tahminine kaçmış. %52'lik doğruluk yazı-tura atmakla aynı. Sebebi: **800 eğitim görüntüsü, 64×64 çözünürlükte, sıfırdan bir CNN'i eğitmek için çok az.**
+
+Augmentasyon (döndürme, kaydırma, çevirme, yakınlaştırma) eklendiğinde doğruluk %62'ye çıktı — iyileşme var ama hâlâ yetersiz.
+
+**Transfer öğrenme ise %89'a ulaştı.** ImageNet'in 1,4 milyon görüntüden öğrendiği görsel özellikler ödünç alınınca, aynı 800 görüntü yeterli hale geldi. Bu, "az veri varsa transfer öğrenme" ilkesinin en net kanıtı.
+
+## 💡 Öğrenmeler
 
 - **Az veri = transfer öğrenme:** 800 eğitim görüntüsüyle sıfırdan "kenar, doku, göz, kulak" öğrenmek zor; ImageNet'in 1,4 milyon görüntüden öğrendiği özellikleri ödünç almak çok daha etkili
 - **Augmentasyon, veri çoğaltmanın bedava yolu:** her epoch'ta aynı fotoğraf farklı görünür
