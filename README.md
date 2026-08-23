@@ -20,6 +20,7 @@ Notebook'lar çalıştırılmış haldedir — GitHub'da açtığınızda çıkt
 | [`10-Isolation-Forest-Dolandiricilik`](10-Isolation-Forest-Dolandiricilik) | Denetimsiz anomali tespiti: etiketsiz dolandırıcılık yakalama (ROC-AUC 0.92), contamination etkisi | 60.000 kredi kartı işlemi |
 | [`11-AdaBoost-XGBoost-Gelir`](11-AdaBoost-XGBoost-Gelir) | Boosting karşılaştırması: XGBoost hem daha doğru (AUC 0.93 vs 0.91) hem 4.5 kat hızlı | 45.000 kişilik nüfus sayımı |
 | [`12-PowerBI-Satis-Dashboard`](12-PowerBI-Satis-Dashboard) | Power BI: yıldız şeması, DAX ölçüleri, ABC analizi ve müşteri segmentasyonu dashboard'u | Satış verisi (pbix içinde) |
+| [`13-SQL-E-Ticaret-Veritabani`](13-SQL-E-Ticaret-Veritabani) | SQL: 13 tablolu e-ticaret veritabanı tasarımı ve 38 analiz sorgusu (JOIN, GROUP BY, subquery) | Kendi oluşturduğum örnek veri |
 
 ## 🔗 Çalışmalar Arası Bağlantı
 
@@ -27,7 +28,7 @@ Notebook'lar çalıştırılmış haldedir — GitHub'da açtığınızda çıkt
 
 ## 🛠️ Kullanılan Araçlar
 
-Python • Power BI (DAX) • NumPy • pandas • matplotlib • seaborn • scipy • scikit-learn • XGBoost • TensorFlow/Keras • Ultralytics YOLO • Jupyter Notebook / Google Colab
+Python • SQL (PostgreSQL) • Power BI (DAX) • NumPy • pandas • matplotlib • seaborn • scipy • scikit-learn • XGBoost • TensorFlow/Keras • Ultralytics YOLO • Jupyter Notebook / Google Colab
 
 ## 💡 Öne Çıkan Öğrenmeler
 
