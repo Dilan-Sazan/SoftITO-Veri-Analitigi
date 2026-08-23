@@ -50,3 +50,89 @@ Stratified train/test • StandardScaler (doğru fit/transform ayrımıyla) • 
 Karar eşiğiyle (0.5) oynayıp precision-recall eğrisi çıkarmak, ROC-AUC ile eşikten bağımsız karşılaştırma.
 
 > ⚠️ Bu bir eğitim çalışmasıdır; gerçek tıbbi değerlendirme yalnızca sağlık profesyonellerince yapılır.
+
+---
+
+## 📓 Notebook Adım Adım — `lojistik_regresyon_pratik.ipynb`
+
+Notebook'un kendisinde yalnızca kod bulunur; her adımın açıklaması burada.
+
+#### 0. Veri Yolu (Colab/Drive Uyumlu)
+
+**Google Colab + Drive kullanıyorsan** ilk üç satırın başındaki `#` işaretlerini kaldır ve
+`VERI_KLASORU`'nu csv dosyasını koyduğun Drive klasörüne göre düzenle.
+
+#### 1. Kütüphaneler
+
+#### 2. Veriyi Yükleme ve Keşfetme
+
+**İki gözlem, iki karar:**
+
+1. **Duplicate'ler hakkında:** ~24 bin "aynı" satır var ama bu veri setinde kişi kimliği (ID) yok ve
+   22 sütunun neredeyse tamamı kategorik/tam sayı. 253 bin kişilik bir ankette iki farklı kişinin
+   bütün sorulara aynı cevabı vermesi gayet olası. Bu yüzden bunları **silmiyoruz** — pandas
+   derslerindeki ilke burada da geçerli: *her tekrar, hata değildir; karar veriye göre verilir.*
+
+2. **Hedefi ikili yapıyoruz:** Ders ikili (binary) sınıflandırma üzerineydi. Prediyabet (1) klinik
+   olarak diyabet yolunda bir risk durumu olduğundan, 1 ve 2'yi birleştirip
+   **"diyabet riski var (1) / yok (0)"** hedefi tanımlıyoruz.
+
+#### 3. Özellik/Hedef Ayrımı ve Train/Test
+
+Dengesiz veri setlerinde ayrımı `stratify` ile yapıyoruz ki her iki sette de sınıf oranları korunusun
+(dersin train/test adımına dengesizlik nedeniyle eklediğimiz güvence).
+
+#### 4. Özellik Ölçeklendirme (StandardScaler)
+
+Dersteki kritik kural: **scaler yalnızca eğitim verisine fit edilir**, test verisi aynı dönüşümle
+sadece transform edilir — aksi test bilgisinin modele sızması (data leakage) olur.
+
+#### 5. Model 1: Standart Lojistik Regresyon
+
+%85 doğruluk — kulağa harika geliyor, değil mi? **Ama durun.** Veri setinin %84'ü zaten sağlıklı;
+herkese "sağlıklı" diyen kafasız bir model bile %84 doğruluk alırdı. Yani modelimiz o kafasız
+modelden neredeyse hiç iyi değil! Gerçeği karmaşıklık matrisi söyler.
+
+**İşte yanılsama ortaya çıktı:** Model, gerçekten riskli olan hastaların yalnızca **%19'unu**
+yakalayabiliyor (recall). Yani 100 diyabet riskli kişiden ~81'ine "sağlıklısın" diyor! Sağlık
+taramasında bu kabul edilemez — kaçırılan hasta (false negative), yanlış alarm verilen sağlıklıdan
+(false positive) çok daha maliyetlidir.
+
+#### 6. Model 2: Sınıf Ağırlıklı Lojistik Regresyon
+
+`class_weight="balanced"` azınlık sınıfının hatalarını daha ağır cezalandırır — model artık
+riskli sınıfı ciddiye almak zorunda.
+
+**Takas (trade-off) net görülüyor:** Dengeli model genel doğruluktan feragat etti ama riskli
+hastaları yakalama oranını (recall) kat kat artırdı. Hangi model "daha iyi"? **Amaca bağlı:**
+tarama amaçlı bir sistemde recall kritiktir → Model 2; kesin teşhis öncesi ön filtrede yanlış
+alarm maliyetliyse precision önem kazanır. Metrik seçimi, iş probleminin kendisidir.
+
+#### 7. Katsayı Yorumu: Riski Ne Artırıyor?
+
+Lojistik regresyonun güzelliği (dersteki vurgu): katsayılar yorumlanabilir. Pozitif katsayı riski
+artırır, negatif azaltır. Özellikler ölçeklendiği için büyüklükleri adilce karşılaştırılabilir.
+
+#### 8. Örnek Tahmin (Olasılıklarıyla)
+
+Dersteki gibi tek bir kişi için tahmin yapıyoruz — ama `predict_proba` ile sigmoid çıktısını,
+yani **risk olasılığını** da gösteriyoruz.
+
+#### 9. Özet — Bu Pratikte Öğrendiklerim
+
+1. **3 sınıflı hedef ikiliye dönüştürüldü** (prediyabet + diyabet = riskli) — gerekçesi açıklanarak
+2. **Duplicate kararı veriye göre verildi:** ID'siz anket verisinde aynı cevap profilleri meşru → tutuldu
+3. **Stratified train/test ayrımı** ile sınıf oranları her iki sette korundu
+4. **StandardScaler doğru kullanıldı:** fit yalnızca eğitimde — data leakage önlendi
+5. ⭐ **Doğruluk yanılsaması canlı yaşandı:** %85 accuracy'li model, riskli hastaların %81'ini kaçırıyordu;
+   karmaşıklık matrisi ve classification_report gerçeği gösterdi
+6. **class_weight='balanced'** ile recall kat kat artırıldı; precision-recall takasının iş problemine
+   göre seçilmesi gerektiği anlaşıldı
+7. **Katsayılar yorumlandı:** genel sağlık algısı, yüksek tansiyon, BMI ve kolesterol riski en çok
+   artıran faktörler olarak öne çıktı
+8. `predict_proba` ile sigmoidin ürettiği **risk olasılıkları** okundu
+
+**Sonraki adım fikirleri:** karar eşiğini (0.5) oynayarak precision-recall eğrisi çıkarmak,
+ROC-AUC ile modelleri eşikten bağımsız karşılaştırmak.
+
+> ⚠️ **Not:** Bu bir eğitim çalışmasıdır; gerçek tıbbi teşhis ancak sağlık profesyonellerince konur.
