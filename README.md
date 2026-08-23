@@ -21,6 +21,7 @@ Notebook'lar çalıştırılmış haldedir — GitHub'da açtığınızda çıkt
 | [`11-AdaBoost-XGBoost-Gelir`](11-AdaBoost-XGBoost-Gelir) | Boosting karşılaştırması: XGBoost hem daha doğru (AUC 0.93 vs 0.91) hem 4.5 kat hızlı | 45.000 kişilik nüfus sayımı |
 | [`12-PowerBI-Satis-Dashboard`](12-PowerBI-Satis-Dashboard) | Power BI: yıldız şeması, DAX ölçüleri, ABC analizi ve müşteri segmentasyonu dashboard'u | Satış verisi (pbix içinde) |
 | [`13-SQL-E-Ticaret-Veritabani`](13-SQL-E-Ticaret-Veritabani) | SQL: 13 tablolu e-ticaret veritabanı tasarımı ve 38 analiz sorgusu (JOIN, GROUP BY, subquery) | Kendi oluşturduğum örnek veri |
+| [`14-Docker-Ogrenci-Analiz`](14-Docker-Ogrenci-Analiz) | Docker: analiz betiklerinin konteynerize edilmesi, docker-compose ile 3 servis | 100 öğrencilik not tablosu |
 
 ## 🔗 Çalışmalar Arası Bağlantı
 
@@ -28,7 +29,7 @@ Notebook'lar çalıştırılmış haldedir — GitHub'da açtığınızda çıkt
 
 ## 🛠️ Kullanılan Araçlar
 
-Python • SQL (PostgreSQL) • Power BI (DAX) • NumPy • pandas • matplotlib • seaborn • scipy • scikit-learn • XGBoost • TensorFlow/Keras • Ultralytics YOLO • Jupyter Notebook / Google Colab
+Python • SQL (PostgreSQL) • Power BI (DAX) • Docker • NumPy • pandas • matplotlib • seaborn • scipy • scikit-learn • XGBoost • TensorFlow/Keras • Ultralytics YOLO • Jupyter Notebook / Google Colab
 
 ## 💡 Öne Çıkan Öğrenmeler
 

@@ -1,0 +1,23 @@
+services:
+  basic_istatistic:
+    build: .
+    container_name: basic_istatistic_service
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: python basic_statistic.py
+
+  correlation_analysis:
+    build: .
+    container_name: correlation_analysis_service
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: python correlation_analysis.py
+  performance_segmentation:
+    build: .
+    container_name: performance_segmentation_service
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: python performance_segmentation.py
